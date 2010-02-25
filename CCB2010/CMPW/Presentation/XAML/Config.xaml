@@ -1,0 +1,65 @@
+﻿<Window x:Class="JOYFULL.CMPW.Presentation.Config"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    WindowState="Maximized" WindowStyle="SingleBorderWindow" Left="0" Top="0"
+    Title="建设银行集中监控预警系统" Icon="../Images/ccb_logo.png" Height="1000"
+        FontSize="16" Closed="Window_Closed">
+    <Grid Height="1000" Width="1280">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="500"/>
+            <ColumnDefinition Width="600*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Button Height="26" Name="btnAddOperator" Margin="0,82,80,0" VerticalAlignment="Top" 
+                    HorizontalAlignment="Right" Width="96.25" Click="btnAddOperator_Click" IsEnabled="True">添加操作员</Button>
+            <Button Margin="0,152,80,0" Name="btnChagePassword" Height="26" HorizontalAlignment="Right"
+                    VerticalAlignment="Top" Width="96.25" Click="btnChagePassword_Click"  IsEnabled="False">修改密码</Button>
+            <Button Margin="0,222,80,0" Name="btnDeleteOperator" Height="26" HorizontalAlignment="Right" 
+                    VerticalAlignment="Top" Width="96.25" Click="btnDeleteOperator_Click"  IsEnabled="False">删除操作员</Button>
+            <TreeView Margin="45,31.687,211.25,150" Name="treeView1" Initialized="treeView1_Initialized" 
+                      SelectedItemChanged="treeView1_SelectedItemChanged" GotFocus="treeView1_GotFocus"
+                      FontFamily="隶书" FontSize="18"/>
+
+        </Grid>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="86" />
+                <RowDefinition Height="650*" />
+                <RowDefinition Height="30" />
+            </Grid.RowDefinitions>
+            <GroupBox Header="参数设置" Grid.Row="1" Margin="0,0,6,120">
+                <Grid Height="720">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="700*"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <Grid x:Name="grdSetting" Margin="27.5,-45,-27.5,32.867" Grid.RowSpan="3" Height="700"  Width="750">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="230" />
+                            <ColumnDefinition Width="10" />
+                            <ColumnDefinition Width="100" />
+                            <ColumnDefinition Width="10" />
+                            <ColumnDefinition Width="230" />
+                            <ColumnDefinition Width="10" />
+                            <ColumnDefinition Width="100*" />
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                </Grid>
+            </GroupBox>
+            <GroupBox Header="系统" Margin="0,12,6,11" Name="groupBox1">
+                <Grid>
+                <TextBlock Margin="27.5,12.5,-27.5,-12.5" FontSize="16">请选择系统</TextBlock>
+                <ComboBox Name="comboBox1" Margin="135,6,41,2.75" FontSize="16"
+                          SelectionChanged="comboBox1_SelectionChanged" Initialized="comboBox1_Initialized" />
+                    </Grid>
+            </GroupBox>
+            <Grid Grid.Row="1" Height="145" Grid.RowSpan="2" VerticalAlignment="Bottom">
+                <Button HorizontalAlignment="Right" Margin="0,55.731,22.508,58.589" Name="btnApply" Width="75"
+                        Click="btnApply_Click" FontSize="16" IsEnabled="False">应用</Button>
+                <Button Margin="0,55.731,228,58.589" Name="btnOK" IsEnabled="False" Click="btnOK_Click" FontSize="16" Width="75" HorizontalAlignment="Right">确定</Button>
+                <Button Margin="0,57.16,121.508,58.589" Name="btnCancel" IsEnabled="False" Click="btnCancel_Click" HorizontalAlignment="Right" 
+                        Width="75" FontSize="16">取消</Button>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

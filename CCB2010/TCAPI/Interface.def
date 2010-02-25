@@ -1,0 +1,15 @@
+LIBRARY TCAPI
+
+EXPORTS
+		InitCard
+		StartCapture
+		StopCapture
+		LogMessage
+		SetLogHandler
+		ReleaseCard
+		GetLatestCapture
+		IsHasSignal
+		GetSignalInfo
+		NextCapture
+		GetLatestCaptureBytes
+		SetUseCaptureBytes

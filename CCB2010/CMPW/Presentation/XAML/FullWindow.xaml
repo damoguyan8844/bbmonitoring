@@ -1,0 +1,19 @@
+﻿<Window x:Class="JOYFULL.CMPW.Presentation.FullWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="1000" Width="1280" WindowState="Maximized"
+    Title="建设银行集中监控预警系统" Icon="../Images/ccb_logo.png" 
+    Closed="Window_Closed">
+    <Grid Height="1000" Width="1280" Background="LightBlue" VerticalAlignment="Top">
+        <Image Name="img" Height="1000" Width="1280" VerticalAlignment="Top"></Image>
+        <TextBlock FontSize="50" Foreground="Red" Name="txtTitle" Margin="0,350,0,0" 
+                   VerticalAlignment="Top" HorizontalAlignment="Center">  </TextBlock>
+        <TextBlock FontSize="35" Foreground="Red" Name="txtDetail" HorizontalAlignment="Center" VerticalAlignment="Center" Text="  "/>
+        <TextBlock FontSize="30" Foreground="Red" Opacity="0.8" Name="info" Margin="0,0,0,328" Height="34"
+                   HorizontalAlignment="Center" VerticalAlignment="Bottom" FontFamily="隶书"
+                   Visibility="Hidden"></TextBlock>
+        <TextBlock FontSize="35" Foreground="Red" Opacity="1.0" Name="txtDesc" Visibility="Hidden"
+                   HorizontalAlignment="Center" VerticalAlignment="Bottom" 
+                   Height="90"></TextBlock>
+    </Grid>
+</Window>
