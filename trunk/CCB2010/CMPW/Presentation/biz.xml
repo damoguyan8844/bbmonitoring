@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Systems>
+  <System order="1" name="CCBS分行终端系统">
+    <Setting type="TextBox" label="日终检查开始时间(hh:mm)">20:00</Setting>
+    <Setting type="TextBox" label="日间检查结束时间(hh:mm)">20:00</Setting>
+    <Setting type="TextBox" label="日间检查时间间隔(秒)">16</Setting>
+    <Setting type="TextBox" label="日终检查时间间隔(秒)">16</Setting>
+  </System>
+  <System order="2" name="大额前置系统">
+    <Setting type="TextBox" label="检查时间间隔(秒)">30</Setting>
+    <Setting type="TextBox" label="检查开始时间(hh:mm)">08:30</Setting>
+    <Setting type="TextBox" label="检查结束时间(hh:mm)">17:15</Setting>
+  </System>
+  <System order="3" name="大额支付系统(汇划业务)">
+    <Setting type="TextBox" label="往账业务接收总笔数无变化(秒)">600</Setting>
+    <Setting type="TextBox" label="往账业务已清算总笔数无变化(秒)">600</Setting>
+    <Setting type="TextBox" label="往账业务排队笔数">0</Setting>
+    <Setting type="TextBox" label="来账业务接收总笔数无变化(秒)">600</Setting>
+    <Setting type="TextBox" label="往账待处理">0</Setting>
+    <Setting type="TextBox" label="来账待处理">0</Setting>
+    <Setting type="TextBox" label="检查开始时间(hh:mm)">08:30</Setting>
+    <Setting type="TextBox" label="检查结束时间(hh:mm)">17:35</Setting>
+    <Setting type="TextBox" label="检查时间间隔(秒)">16</Setting>
+  </System>
+  <System order="4" name="小额前置系统">
+    <Setting type="TextBox" label="检查时间间隔(秒)">30</Setting>
+  </System>
+  <System order="5" name="小额直联系统(非实时业务)">
+    <Setting type="TextBox" label="往账业务接收总笔数无变化(秒)">600</Setting>
+    <Setting type="TextBox" label="往账业务异常总笔数">0</Setting>
+    <Setting type="TextBox" label="往账回执异常总笔数">0</Setting>
+    <Setting type="TextBox" label="往账信息异常总笔数">0</Setting>
+    <Setting type="TextBox" label="往账业务异常总包数">0</Setting>
+    <Setting type="TextBox" label="往账回执异常总包数">0</Setting>
+    <Setting type="TextBox" label="往账信息异常总包数">0</Setting>
+    <!--<Setting type="TextBox" label="往账业务已清算总包数无变化(秒)" >1800</Setting>-->
+    <Setting type="TextBox" label="来帐业务已发总笔数无变化(秒)">1800</Setting>
+    <Setting type="TextBox" label="来帐业务异常总笔数">0</Setting>
+    <Setting type="TextBox" label="来帐信息异常总笔数">0</Setting>
+    <Setting type="TextBox" label="检查开始时间(hh:mm)">08:00</Setting>
+    <Setting type="TextBox" label="检查结束时间(hh:mm)">18:05</Setting>
+    <Setting type="TextBox" label="检查时间间隔(秒)">30</Setting>
+  </System>
+  <System order="6" name="大额支付系统(事务信息)">
+    <Setting type="TextBox" label="事务往账异常笔数(查询)">0</Setting>
+    <Setting type="TextBox" label="事务往账未发送笔数(查询)">2</Setting>
+    <Setting type="TextBox" label="事务来账异常笔数(查询)">0</Setting>
+    <Setting type="TextBox" label="事务来账未发送笔数(查询)">2</Setting>
+    <Setting type="TextBox" label="事务往账异常笔数(查复)">0</Setting>
+    <Setting type="TextBox" label="事务往账未发送笔数(查复)">2</Setting>
+    <Setting type="TextBox" label="事务来账异常笔数(查复)">0</Setting>
+    <Setting type="TextBox" label="事务来账未发送笔数(查复)">2</Setting>
+    <Setting type="TextBox" label="事务往账异常笔数(自由格式)">0</Setting>
+    <Setting type="TextBox" label="事务往账未发送笔数(自由格式)">2</Setting>
+    <Setting type="TextBox" label="事务来账异常笔数(自由格式)">0</Setting>
+    <Setting type="TextBox" label="事务来账未发送笔数(自由格式)">2</Setting>
+    <Setting type="TextBox" label="事务往账异常笔数(退回申请)">0</Setting>
+    <Setting type="TextBox" label="事务往账未发送笔数(退回申请)">2</Setting>
+    <Setting type="TextBox" label="事务来账异常笔数(退回申请)">0</Setting>
+    <Setting type="TextBox" label="事务来账未发送笔数(退回申请)">2</Setting>
+    <Setting type="TextBox" label="事务往账异常笔数(退回应答)">0</Setting>
+    <Setting type="TextBox" label="事务往账未发送笔数(退回应答)">2</Setting>
+    <Setting type="TextBox" label="事务来账异常笔数(退回应答)">0</Setting>
+    <Setting type="TextBox" label="事务来账未发送笔数(退回应答)">2</Setting>
+    <Setting type="TextBox" label="通知类报文笔数">0</Setting>
+    <Setting type="TextBox" label="业务收费报文笔数">0</Setting>
+    <Setting type="TextBox" label="自由格式笔数">0</Setting>
+    <Setting type="TextBox" label="大额汇总对账笔数">1</Setting>
+    <Setting type="TextBox" label="检查开始时间(hh:mm)">08:00</Setting>
+    <Setting type="TextBox" label="检查结束时间(hh:mm)">17:50</Setting>
+    <Setting type="TextBox" label="检查时间间隔(秒)">16</Setting>
+  </System>
+  <System order="7" name="小额直联系统(非实时事务)">
+    <Setting type="TextBox" label="事务往账异常笔数(查询书)">0</Setting>
+    <Setting type="TextBox" label="事务往账未发送笔数(查询书)">1</Setting>
+    <Setting type="TextBox" label="事务来账异常笔数(查询书)">0</Setting>
+    <Setting type="TextBox" label="事务来账未发送笔数(查询书)">1</Setting>
+    <Setting type="TextBox" label="事务往账异常笔数(查复书)">0</Setting>
+    <Setting type="TextBox" label="事务往账未发送笔数(查复书)">1</Setting>
+    <Setting type="TextBox" label="事务来账异常笔数(查复书)">0</Setting>
+    <Setting type="TextBox" label="事务来账未发送笔数(查复书)">1</Setting>
+    <Setting type="TextBox" label="事务往账异常笔数(自由格式)">0</Setting>
+    <Setting type="TextBox" label="事务往账未发送笔数(自由格式)">1</Setting>
+    <Setting type="TextBox" label="事务来账异常笔数(自由格式)">0</Setting>
+    <Setting type="TextBox" label="事务来账未发送笔数(自由格式)">1</Setting>
+    <Setting type="TextBox" label="事务往账异常笔数(退回申请)">0</Setting>
+    <Setting type="TextBox" label="事务往账未发送笔数(退回申请)">1</Setting>
+    <Setting type="TextBox" label="事务来账异常笔数(退回申请)">0</Setting>
+    <Setting type="TextBox" label="事务来账未发送笔数(退回申请)">1</Setting>
+    <Setting type="TextBox" label="事务往账异常笔数(退回应答)">0</Setting>
+    <Setting type="TextBox" label="事务往账未发送笔数(退回应答)">1</Setting>
+    <Setting type="TextBox" label="事务来账异常笔数(退回应答)">0</Setting>
+    <Setting type="TextBox" label="事务来账未发送笔数(退回应答)">1</Setting>
+    <Setting type="TextBox" label="事务往账异常笔数(止付申请)">0</Setting>
+    <Setting type="TextBox" label="事务往账未发送笔数(止付申请)">1</Setting>
+    <Setting type="TextBox" label="事务来账异常笔数(止付申请)">0</Setting>
+    <Setting type="TextBox" label="事务来账未发送笔数(止付申请)">1</Setting>
+    <Setting type="TextBox" label="事务往账异常笔数(止付应答)">0</Setting>
+    <Setting type="TextBox" label="事务往账未发送笔数(止付应答)">1</Setting>
+    <Setting type="TextBox" label="事务来账异常笔数(止付应答)">0</Setting>
+    <Setting type="TextBox" label="事务来账未发送笔数(止付应答)">1</Setting>
+    <Setting type="TextBox" label="事务往账异常笔数(实时信息)">0</Setting>
+    <Setting type="TextBox" label="事务往账未发送笔数(实时信息)">1</Setting>
+    <Setting type="TextBox" label="事务来账异常笔数(实时信息)">0</Setting>
+    <Setting type="TextBox" label="事务来账未发送笔数(实时信息)">1</Setting>
+    <Setting type="TextBox" label="事务往账异常笔数(其他信息)">0</Setting>
+    <Setting type="TextBox" label="事务往账未发送笔数(其他信息)">1</Setting>
+    <Setting type="TextBox" label="事务来账异常笔数(其他信息)">0</Setting>
+    <Setting type="TextBox" label="事务来账未发送笔数(其他信息)">1</Setting>
+    <!--<Setting type="TextBox" label="对账通知报文笔数" >1</Setting>-->
+    <Setting type="TextBox" label="自由格式通知报文笔数">0</Setting>
+    <Setting type="TextBox" label="收费通知报文笔数">0</Setting>
+    <Setting type="TextBox" label="返还通知报文笔数">0</Setting>
+    <Setting type="TextBox" label="其它通知报文笔数">136</Setting>
+    <Setting type="TextBox" label="总行通知报文笔数">0</Setting>
+    <Setting type="TextBox" label="小额汇总对帐笔数">1</Setting>
+    <Setting type="TextBox" label="检查开始时间(hh:mm)">08:00</Setting>
+    <Setting type="TextBox" label="检查结束时间(hh:mm)">18:00</Setting>
+    <Setting type="TextBox" label="检查时间间隔(秒)">16</Setting>
+  </System>
+  <System order="8" name="支票影像系统">
+    <Setting type="TextBox" label="检查时间间隔(秒)">30</Setting>
+    <Setting type="TextBox" label="工作日期检查开始时间(hh:mm)">16:30</Setting>
+  </System>
+  <System order="9" name="重客系统">
+    <Setting type="TextBox" label="异常交易总笔数：">0</Setting>
+    <Setting type="TextBox" label="异常节点个数：">0</Setting>
+    <Setting type="TextBox" label="交易全程状态 - 处理中/正常处理中：">30</Setting>
+    <Setting type="TextBox" label="检查时间间隔(秒)">300</Setting>
+  </System>
+  <System order="10" name="清算系统">
+    <Setting type="TextBox" label="网间状态检查时间间隔(秒)">300</Setting>
+    <Setting type="TextBox" label="对账状态检查时间间隔(秒)">30</Setting>
+    <Setting type="TextBox" label="对账状态日间检查结束时间(hh:mm)">16:10</Setting>
+    <Setting type="TextBox" label="节点状态日终检查开始时间(hh:mm)">16:10</Setting>
+	<Setting type="TextBox" label="节点状态日终检查时间间隔(秒)">16</Setting>
+  </System>
+  <System order="11" name="清算直联系统">
+    <Setting type="TextBox" label="(往帐汇划)未发笔数">50</Setting>
+    <!--<Setting type="TextBox" label="(往帐汇划)失败笔数">5</Setting>-->
+    <Setting type="TextBox" label="(往帐事务)未发笔数">5</Setting>
+    <!--<Setting type="TextBox" label="(往帐事务)失败笔数">5</Setting>-->
+    <Setting type="TextBox" label="(来帐汇划)未发笔数">50</Setting>
+    <Setting type="TextBox" label="(来帐汇划)失败笔数">5</Setting>
+    <Setting type="TextBox" label="(来帐事务)未发笔数">5</Setting>
+    <Setting type="TextBox" label="(来帐事务)失败笔数">5</Setting>
+    <Setting type="TextBox" label="检查时间间隔(秒)">30</Setting>
+  </System>
+  <System order="12" name="CTS系统">
+    <Setting type="TextBox" label="安徽分行 - 正常处理中笔数">5</Setting>
+    <Setting type="TextBox" label="华安证券 - 正常处理中笔数">5</Setting>
+    <Setting type="TextBox" label="国元证券 - 正常处理中笔数">5</Setting>
+    <Setting type="TextBox" label="安徽分行 - 失败结束笔数/成功结束笔数(%)">15</Setting>
+    <Setting type="TextBox" label="华安证券 - 失败结束笔数/成功结束笔数(%)">15</Setting>
+    <Setting type="TextBox" label="国元证券 - 失败结束笔数/成功结束笔数(%)">15</Setting>
+    <Setting type="TextBox" label="检查开始时间(hh:mm)">09:00</Setting>
+    <Setting type="TextBox" label="检查时间间隔(秒)">1200</Setting>
+  </System>
+  <System order="13" name="证券系统">
+    <Setting type="TextBox" label="失败次数">5</Setting>
+    <Setting type="TextBox" label="检查时间间隔(秒)">16</Setting>
+  </System>
+  <System order="14" name="银保通系统">
+  <Setting type="TextBox" label="交易状态异常 - 标志数目">1</Setting>
+    <Setting type="TextBox" label="检查时间间隔(秒)">16</Setting>
+  </System>
+</Systems>

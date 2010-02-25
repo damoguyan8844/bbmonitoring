@@ -1,0 +1,87 @@
+﻿<Window x:Class="JOYFULL.CMPW.Presentation.Monitor"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid" 
+    WindowState="Maximized" WindowStyle="SingleBorderWindow" Left="0" Top="0"
+    VerticalAlignment="Center" HorizontalAlignment="Center" 
+    Title="建设银行集中监控预警系统" Icon="../Images/ccb_logo.png" 
+    Closed="Window_Closed"
+    >
+    <Grid Margin="2,2,2,2" Width="1240" Height="1000">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="800*"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="157*"/>
+            <RowDefinition Height="35"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="900*" />
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="270" />
+            </Grid.ColumnDefinitions>
+            <Image x:Name="img" Grid.Column="0" Width="900" Height="800" HorizontalAlignment="Center" MouseDown="img_MouseDown" />
+            <Grid Grid.Column="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="300"/>
+                    <RowDefinition Height="500*"/>
+                </Grid.RowDefinitions>
+                <GroupBox x:Name="grpCmd" Grid.Row="0" Width="270" Height="300" Header="操作" VerticalAlignment="Top">
+                    <Grid>
+                        <TextBlock Width="75" Height="23" HorizontalAlignment="Left" Margin="18.75,12.5,0,0" VerticalAlignment="Top">暂停监控</TextBlock>
+                        <ComboBox Name="cbxDisable" Height="23" Margin="91.25,6,16.25,0" VerticalAlignment="Top" DropDownOpened="cbxDisable_DropDownOpened" SelectionChanged="cbxDisable_SelectionChanged"></ComboBox>
+                        <TextBlock Width="75" Height="23" HorizontalAlignment="Left" Margin="18.75,56.25,0,0" VerticalAlignment="Top">恢复监控</TextBlock>
+                        <ComboBox Name="cbxEnable" Height="23" Margin="91.25,51.25,16.25,0" VerticalAlignment="Top" DropDownOpened="cbxEnable_DropDownOpened" SelectionChanged="cbxEnable_SelectionChanged"></ComboBox>
+                        <Button Name="btnUserSwitch" Width="75" HorizontalAlignment="Right" Margin="0,101.25,43.75,0" Height="22.813" VerticalAlignment="Top" Click="btnUserSwitch_Click">手动轮切</Button>
+                        <Button Name="btnAutoSwitch" Margin="43.75,101.25,0,0" HorizontalAlignment="Left" Width="75.5" Height="22.813" VerticalAlignment="Top" IsEnabled="False" Click="btnAutoSwitch_Click">自动轮切</Button>
+                        <Button Name="btnError" Click="btnError_Click" HorizontalAlignment="Left" Margin="43.25,0,0,111.25" Width="75.5" Height="22.813" VerticalAlignment="Bottom">识别错误</Button>
+                        <Button Margin="0,0,43.75,111.25" Name="btnChangePs" HorizontalAlignment="Right" Width="75" Click="btnChangePs_Click" Height="22.813" VerticalAlignment="Bottom">修改密码</Button>
+                        <Button Name="btnExit" Width="75" Height="23" HorizontalAlignment="Left" Margin="43.25,0,0,71.811" VerticalAlignment="Bottom" Click="btnExit_Click">日终</Button>
+                    </Grid>
+                </GroupBox>
+                <GroupBox x:Name="grpContent" Grid.Row="1" Header="监控内容" Margin="0,6,0,0">
+                    <Grid x:Name="grdContent" Width="270" Height="500" ScrollViewer.CanContentScroll="True"
+                          ScrollViewer.VerticalScrollBarVisibility="Auto">
+                        <TextBlock Name="txtInfo" Text="识别内容" Margin="6,9,14,11"
+                                   FontSize="10" ScrollViewer.CanContentScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Auto"/>
+                    </Grid>
+                </GroupBox>
+            </Grid>
+            <Label Height="60" HorizontalAlignment="Left" Margin="18,66,0,0" Name="lblAlert"
+                   VerticalAlignment="Top" Width="130" FontSize="40" HorizontalContentAlignment="Center"
+                   Background="Yellow" VerticalContentAlignment="Center" IsEnabled="False" Opacity="0.8"
+                   Foreground="Red">异常</Label>
+        </Grid>
+        <Grid Height="150"  Grid.Row="2" VerticalAlignment="Bottom">
+            <Image  x:Name="img0" Height="150" Width="230"/>
+            <Image  x:Name="img1" Height="150" Width="230"/>
+            <Image  x:Name="img2" Height="150" Width="230"/>
+            <Image  x:Name="img3" Height="150" Width="230"/>
+            <Image  x:Name="img4" Height="150" Width="230"/>
+            <Image  x:Name="img5" Height="150" Width="230"/>
+            <Image  x:Name="img6" Height="150" Width="230"/>
+            <Label Margin="393,6,0,0" Name="lbl0" FontSize="20" HorizontalContentAlignment="Center"
+                   Background="Yellow" VerticalContentAlignment="Center" IsEnabled="False" Opacity="0.8"
+                   Foreground="Red" Height="35" VerticalAlignment="Top" HorizontalAlignment="Left" Width="60">异常</Label>
+            <Label Margin="393,6,0,0" Name="lbl1" FontSize="20" HorizontalContentAlignment="Center"
+                   Background="Yellow" VerticalContentAlignment="Center" IsEnabled="False" Opacity="0.8"
+                   Foreground="Red" Height="35" VerticalAlignment="Top" HorizontalAlignment="Left" Width="60">异常</Label>
+            <Label Margin="393,6,0,0" Name="lbl2" FontSize="20" HorizontalContentAlignment="Center"
+                   Background="Yellow" VerticalContentAlignment="Center" IsEnabled="False" Opacity="0.8"
+                   Foreground="Red" Height="35" VerticalAlignment="Top" HorizontalAlignment="Left" Width="60">异常</Label>
+            <Label Margin="393,6,0,0" Name="lbl3" FontSize="20" HorizontalContentAlignment="Center"
+                   Background="Yellow" VerticalContentAlignment="Center" IsEnabled="False" Opacity="0.8"
+                   Foreground="Red" Height="35" VerticalAlignment="Top" HorizontalAlignment="Left" Width="60">异常</Label>
+            <Label Margin="393,6,0,0" Name="lbl4" FontSize="20" HorizontalContentAlignment="Center"
+                   Background="Yellow" VerticalContentAlignment="Center" IsEnabled="False" Opacity="0.8"
+                   Foreground="Red" Height="35" VerticalAlignment="Top" HorizontalAlignment="Left" Width="60">异常</Label>
+            <Label Margin="393,6,0,0" Name="lbl5" FontSize="20" HorizontalContentAlignment="Center"
+                   Background="Yellow" VerticalContentAlignment="Center" IsEnabled="False" Opacity="0.8"
+                   Foreground="Red" Height="35" VerticalAlignment="Top" HorizontalAlignment="Left" Width="60">异常</Label>
+            <Label Margin="393,6,0,0" Name="lbl6" FontSize="20" HorizontalContentAlignment="Center"
+                   Background="Yellow" VerticalContentAlignment="Center" IsEnabled="False" Opacity="0.8"
+                   Foreground="Red" Height="35" VerticalAlignment="Top" HorizontalAlignment="Left" Width="60">异常</Label>
+        </Grid>
+        
+    </Grid>
+</Window>
