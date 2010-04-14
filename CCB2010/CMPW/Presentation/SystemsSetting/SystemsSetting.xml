@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Systems>
   <Alerts>
     <Alert order="0" name="NULL" time="50" source="NULL" />
@@ -67,7 +67,7 @@
     <CaptureParameter>
       <BeginTimeParameter order="1" type="time" label="检查开始时间(hh:mm)" value="08:30" applayon="1;2;3;4;5;6;7;8;9;10;11;12;13" />
       <EndTimeParameter order="2" type="time" label="检查结束时间(hh:mm)" value="17:35" applayon="1;2;3;4;5;6;7;8;9;10;11;12;13" />
-      <FreqParameter order="3" type="int" label="检查时间间隔(秒)" value="30" applayon="1;2;3;4;5;6;7;8;9;10;11;12;13" />
+      <FreqParameter order="3" type="int" label="检查时间间隔(秒)" value="8" applayon="1;2;3;4;5;6;7;8;9;10;11;12;13" />
     </CaptureParameter>
   </System>
   <System order="4" name="小额前置系统" sign="状态更新日">
@@ -101,7 +101,7 @@
     <CaptureParameter>
       <BeginTimeParameter order="1" type="time" label="检查开始时间(hh:mm)" value="08:00" applayon="1;2;3;4;5;6;7;9;10;11;12;13;14;15;16;17" />
       <EndTimeParameter order="2" type="time" label="检查结束时间(hh:mm)" value="18:05" applayon="1;2;3;4;5;6;7;9;10;11;12;13;14;15;16;17" />
-      <FreqParameter order="3" type="int" label="检查时间间隔(秒)" value="30" applayon="1;2;3;4;5;6;7;9;10;11;12;13;14;15;16;17" />
+      <FreqParameter order="3" type="int" label="检查时间间隔(秒)" value="16" applayon="1;2;3;4;5;6;7;9;10;11;12;13;14;15;16;17" />
     </CaptureParameter>
   </System>
   <System order="6" name="大额支付系统(事务信息)" sign="大额支付系统事务">
@@ -208,7 +208,7 @@
       <Condition order="2" type="int" label="异常节点个数" value="0" compare="big" enable="true" alerttype="1" rect="380;80;445;110" />
       <Condition order="3" type="int" label="中心状态" value="1" compare="not" enable="true" alerttype="1" rect="700;50;785;75" />
       <Condition order="4" type="int" label="交易全程状态" value="300" compare="big" enable="true" alerttype="1" rect="700;80;785;110" />
-      <Condition order="5" type="int" label="交易结果报警" value="0" compare="big" enable="true" alerttype="1" rect="700;80;785;110" />
+      <Condition order="5" type="int" label="交易结果报警" value="0" compare="big" enable="true" alerttype="1" rect="950;50;1000;75" />
     </AlertCondition>
     <CaptureParameter>
       <FreqParameter order="1" type="int" label="检查时间间隔(秒)" value="300" applayon="1;2;3;4;5" />
@@ -255,9 +255,9 @@
       <Condition order="7" type="int" label="国元证券 - 正常处理中笔数" value="5" compare="big" enable="true" alerttype="1" rect="295;145;405;175" />
       <Condition order="8" type="int" label="国元证券 - 失败结束笔数" value="-1" compare="small" enable="true" alerttype="1" rect="475;145;565;175" />
       <Condition order="9" type="int" label="国元证券 - 成功结束笔数" value="-1" compare="small" enable="true" alerttype="1" rect="625;145;715;175" />
-      <Condition order="10" type="int" label="安徽分行 - 失败结束笔数/成功结束笔数(%)" value="15" compare="big" enable="true" alerttype="1" rect="0;0;1;1" />
-      <Condition order="11" type="int" label="华安证券 - 失败结束笔数/成功结束笔数(%)" value="15" compare="big" enable="true" alerttype="1" rect="0;0;1;1" />
-      <Condition order="12" type="int" label="国元证券 - 失败结束笔数/成功结束笔数(%)" value="15" compare="big" enable="true" alerttype="1" rect="0;0;1;1" />
+      <Condition order="10" type="int" label="安徽分行 - 失败结束笔数/成功结束笔数(%)" value="20" compare="big" enable="true" alerttype="1" rect="0;0;1;1" />
+      <Condition order="11" type="int" label="华安证券 - 失败结束笔数/成功结束笔数(%)" value="20" compare="big" enable="true" alerttype="1" rect="0;0;1;1" />
+      <Condition order="12" type="int" label="国元证券 - 失败结束笔数/成功结束笔数(%)" value="20" compare="big" enable="true" alerttype="1" rect="0;0;1;1" />
     </AlertCondition>
     <CaptureParameter>
       <BeginTimeParameter order="2" type="time" label="检查开始时间(hh:mm)" value="09:00" applayon="1;2;3;4;5;6;7;8;9;10;11;12" />
