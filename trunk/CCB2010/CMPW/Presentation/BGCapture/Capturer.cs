@@ -61,19 +61,19 @@ namespace JOYFULL.CMPW.Presentation.BGCapture
 
                 while(true) 
                 {
-                    
+                    System.Drawing.Bitmap bitContent=null;
                     try
                     {
                         //log.Error("Start Capture Screen");
                         Int32 captureIndex = lastCaptureIndex;
-                        System.Drawing.Bitmap bitContent = m_channel.CaptureScreen_EX(out captureIndex);
-                        //string[] files = { "C:\\RiZhong.bmp",
+                        bitContent = m_channel.CaptureScreen_EX(out captureIndex);
+                        //string[] files = { "G:\\Work\\BBMonitoring\\18_capture_189.bmp",
                         //                    "C:\\Exception.bmp"/*,*/
                         //                   /*"C:\\RiZhongAndException.bmp"/ *,* /*/
                         //                   /*"C:\\NoException.bmp"*/};
 
                         //captureIndex++;
-                        // System.Drawing.Bitmap bitContent = new System.Drawing.Bitmap(files[captureIndex % files.Length]); 
+                        //bitContent = new System.Drawing.Bitmap(files[captureIndex % files.Length]); 
                        
 						if(bitContent==null) continue;
                         //string fileName = m_channel.CaptureScreenFile();
@@ -88,14 +88,18 @@ namespace JOYFULL.CMPW.Presentation.BGCapture
 
                             log.Info("Return SysID:" + sysID.ToString());
                         }
+
                         bitContent.Dispose();
-                        bitContent = null;
-                        Thread.Sleep(captureIdleSeconds);
+                        bitContent = null; 
                     }
                     catch(System.Exception e)
                     {
+                        if(bitContent!=null) 
+                            bitContent.Dispose();
+                        bitContent = null; 
                         log.Error("\r\nSource:"+e.Source +"\r\nMessage:"+e.Message+"\r\n"+e.StackTrace);
                     }
+                    Thread.Sleep(captureIdleSeconds);
                 }
             }
         }
