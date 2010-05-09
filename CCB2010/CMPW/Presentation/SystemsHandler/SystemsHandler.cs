@@ -1014,6 +1014,7 @@ namespace JOYFULL.CMPW.Presentation.SystemsHandler
                 }
               
                 DeleteObject(hBitMap);
+                hBitMap = IntPtr.Zero;
 
                 //if (g_updatedSystem.ContainsKey(sysID) && g_updatedSystem[sysID] == true) ;
                 if (sysID != INVALID_SYSTEMID && sysID != _processingSystemID)
@@ -1030,8 +1031,9 @@ namespace JOYFULL.CMPW.Presentation.SystemsHandler
 
                 if (hBitMap != IntPtr.Zero)
                     DeleteObject(hBitMap);
+                sysID = INVALID_SYSTEMID;
 
-                return INVALID_SYSTEMID;
+                log.Error("\r\n*************************************");
             }
 
             return sysID;
