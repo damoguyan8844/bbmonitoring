@@ -9,7 +9,7 @@ namespace JOYFULL.CMPW.Presentation.SystemsHandler
 {
     public class Logic_BWSystemLogic : SubSystemLogic
     {
-        static public Rect _SystemSignRange = new Rect(310, 58, 650, 120);
+        static public Rect _SystemSignRange = new Rect(310, 58, 650, 125);
         static public int _SystemSignThreshHold = 180;
 
         static public int _SystemID_1 = 1;

@@ -40,14 +40,14 @@ namespace JOYFULL.CMPW.Presentation.SystemsHandler
                 _SystemBitMap.PixelFormat ).GetHbitmap();
             string fileName = SystemsHandler.GetSystemFolder( _SystemID ) + "ensure.bmp";
             // 输入状态」 F1 一帮助
-            bool recSuccessed = ANNWrapper.SaveBlockToBMP4( hBmp, 163, 605, 177, 630, fileName,
+            bool recSuccessed = ANNWrapper.SaveBlockToBMP4( hBmp, 163, 625, 177, 650, fileName,
                 _SystemDigitThreshHold, true );
             recSuccessed = recSuccessed && m_DigitParser.TryParse( fileName,
                 JOYFULL.CMPW.Digit.Digit.DigitType.DIGIT_INT, out txt );
 
             if ( recSuccessed && txt == "1" )
             {// 退出，F3 - 查询上页
-                recSuccessed = ANNWrapper.SaveBlockToBMP4( hBmp, 415, 605, 430, 630, fileName,
+                recSuccessed = ANNWrapper.SaveBlockToBMP4( hBmp, 415, 625, 430, 650, fileName,
                     _SystemDigitThreshHold, true );
                 recSuccessed = recSuccessed && m_DigitParser.TryParse( fileName,
                     JOYFULL.CMPW.Digit.Digit.DigitType.DIGIT_INT, out txt );
@@ -62,7 +62,7 @@ namespace JOYFULL.CMPW.Presentation.SystemsHandler
             m_DigitParser.ParameterSettingFile = SystemsHandler.PARAs_FOLDER+ _SystemParasSettingFile;
         }
 
-        static public int[]grid_lines = new int[] {241,268,295,320,348,376,404,431,458,483,510,538};
+        static public int[]grid_lines = new int[] {246,273,304,330,358,390,415,445,472,500,527,554};
         static public int grid_digit_left = 9;
         static public int grid_dight_right = 160;
 
