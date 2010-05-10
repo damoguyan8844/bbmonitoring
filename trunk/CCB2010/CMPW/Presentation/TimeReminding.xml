@@ -1,11 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Remindings>
-  <Reminding file="重要时间点提示1.wav" time="08:00" desc="重客系统请签到" />
+  <Reminding file="重要时间点提示1.wav" time="08:00" desc="重客系统请签到。" />
   <Reminding file="重要时间点提示2.wav" time="08:10" desc="资金清算、清算直联、大额支付系统请签到，电信控管开机。" />
   <Reminding file="重要时间点提示3.wav" time="11:00" desc="请报送特色平台批量业务。" />
   <Reminding file="重要时间点提示4.wav" time="14:30" desc="请发送特色平台批量业务。" />
-  <Reminding file="重要时间点提示5.wav" time="16:00" desc="请注意小额支付系统日切，处理支票影像系统日终业务。" />
+  <Reminding file="重要时间点提示5.wav" time="16:00" desc="请进行银期转账日终处理，支票影像日终处理，注意小额支付系统日切。" />
   <Reminding file="重要时间点提示6.wav" time="19:30" desc="请处理重客系统日终业务。" />
-  <Reminding file="重要时间点提示7.wav" time="20:00" desc="请处理龙卡上送业务、委托行住房系统日终业务。" />
+  <Reminding file="重要时间点提示7.wav" time="20:00" desc="请及时处理龙卡上传业务。" />
   <Reminding file="重要时间点提示8.wav" time="21:30" desc="请进行特色平台日切处理。" />
+  <Reminding file="重要时间点提示9.wav" time="19:00" desc="请及时处理委托性住房金融系统日终业务." />
+  <Reminding file="重要时间点提示10.wav" time="23:59" desc="预留" />
+  <Reminding file="重要时间点提示11.wav" time="23:59" desc="预留" />
+  <Reminding file="重要时间点提示12.wav" time="23:59" desc="预留" />
 </Remindings>
