@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Systems>
   <Alerts>
     <Alert order="0" name="NULL" time="50" source="NULL" />
@@ -91,17 +91,21 @@
       <Condition order="9" type="int" label="来帐业务已发总笔数无变化(秒)" value="1800" compare="big" enable="true" alerttype="1" rect="300;521;365;555" />
       <Condition order="10" type="int" label="来帐业务异常总笔数" value="0" compare="big" enable="true" alerttype="1" rect="375;521;440;555" />
       <Condition order="11" type="int" label="来帐信息异常总笔数" value="0" compare="big" enable="true" alerttype="1" rect="375;575;440;610" />
-      <Condition order="12" type="int" label="往帐接收" value="-1" compare="small" enable="true" alerttype="1" rect="74;247;145;280" />
-      <Condition order="13" type="int" label="往账异常" value="-1" compare="small" enable="true" alerttype="1" rect="305;247;370;280" />
-      <Condition order="14" type="int" label="已发包数" value="-1" compare="small" enable="true" alerttype="1" rect="510;247;575;280" />
-      <Condition order="15" type="int" label="来账接收" value="-1" compare="small" enable="true" alerttype="1" rect="74;520;145;550" />
-      <Condition order="16" type="int" label="来账异常" value="-1" compare="small" enable="true" alerttype="1" rect="375;521;440;555" />
-      <Condition order="17" type="int" label="来账已发" value="-1" compare="small" enable="true" alerttype="1" rect="300;521;365;555" />
+      <Condition order="12" type="int" label="往账业务已发总包数无变化(秒)" value="1200" compare="big" enable="true" alerttype="1" rect="515;250;580;280" />
+      <Condition order="13" type="int" label="往账业务已轧差包数无变化(秒)" value="1200" compare="big" enable="true" alerttype="1" rect="740;250;800;280" />
+      <Condition order="14" type="int" label="往帐接收" value="-1" compare="small" enable="true" alerttype="1" rect="74;247;145;280" />
+      <Condition order="15" type="int" label="往账异常" value="-1" compare="small" enable="true" alerttype="1" rect="305;247;370;280" />
+      <Condition order="16" type="int" label="已发包数" value="-1" compare="small" enable="true" alerttype="1" rect="510;247;575;280" />
+      <Condition order="17" type="int" label="来账接收" value="-1" compare="small" enable="true" alerttype="1" rect="74;520;145;550" />
+      <Condition order="18" type="int" label="来账异常" value="-1" compare="small" enable="true" alerttype="1" rect="375;521;440;555" />
+      <Condition order="19" type="int" label="来账已发" value="-1" compare="small" enable="true" alerttype="1" rect="300;521;365;555" />
+      <Condition order="20" type="int" label="往账业务已发总包数" value="-1" compare="small" enable="true" alerttype="1" rect="515;250;580;280" />
+      <Condition order="21" type="int" label="往账业务已轧差包数" value="-1" compare="small" enable="true" alerttype="1" rect="740;250;800;280" />
     </AlertCondition>
     <CaptureParameter>
-      <BeginTimeParameter order="1" type="time" label="检查开始时间(hh:mm)" value="08:00" applayon="1;2;3;4;5;6;7;9;10;11;12;13;14;15;16;17" />
-      <EndTimeParameter order="2" type="time" label="检查结束时间(hh:mm)" value="18:05" applayon="1;2;3;4;5;6;7;9;10;11;12;13;14;15;16;17" />
-      <FreqParameter order="3" type="int" label="检查时间间隔(秒)" value="16" applayon="1;2;3;4;5;6;7;9;10;11;12;13;14;15;16;17" />
+      <BeginTimeParameter order="1" type="time" label="检查开始时间(hh:mm)" value="08:00" applayon="1;2;3;4;5;6;7;9;10;11;12;13;14;15;16;17;18;19;20;21" />
+      <EndTimeParameter order="2" type="time" label="检查结束时间(hh:mm)" value="18:05" applayon="1;2;3;4;5;6;7;9;10;11;12;13;14;15;16;17;18;19;20;21" />
+      <FreqParameter order="3" type="int" label="检查时间间隔(秒)" value="16" applayon="1;2;3;4;5;6;7;9;10;11;12;13;14;15;16;17;18;19;20;21" />
     </CaptureParameter>
   </System>
   <System order="6" name="大额支付系统(事务信息)" sign="大额支付系统事务">

@@ -20,7 +20,7 @@
     <Setting type="TextBox" label="来账待处理">0</Setting>
     <Setting type="TextBox" label="检查开始时间(hh:mm)">08:30</Setting>
     <Setting type="TextBox" label="检查结束时间(hh:mm)">17:35</Setting>
-    <Setting type="TextBox" label="检查时间间隔(秒)">16</Setting>
+    <Setting type="TextBox" label="检查时间间隔(秒)">8</Setting>
   </System>
   <System order="4" name="小额前置系统">
     <Setting type="TextBox" label="检查时间间隔(秒)">30</Setting>
@@ -37,9 +37,11 @@
     <Setting type="TextBox" label="来帐业务已发总笔数无变化(秒)">1800</Setting>
     <Setting type="TextBox" label="来帐业务异常总笔数">0</Setting>
     <Setting type="TextBox" label="来帐信息异常总笔数">0</Setting>
+    <Setting type="TextBox" label="往账业务已发总包数无变化(秒)">1200</Setting>
+    <Setting type="TextBox" label="往账业务已轧差包数无变化(秒)">1200</Setting>
     <Setting type="TextBox" label="检查开始时间(hh:mm)">08:00</Setting>
     <Setting type="TextBox" label="检查结束时间(hh:mm)">18:05</Setting>
-    <Setting type="TextBox" label="检查时间间隔(秒)">30</Setting>
+    <Setting type="TextBox" label="检查时间间隔(秒)">16</Setting>
   </System>
   <System order="6" name="大额支付系统(事务信息)">
     <Setting type="TextBox" label="事务往账异常笔数(查询)">0</Setting>
@@ -115,7 +117,7 @@
     <Setting type="TextBox" label="总行通知报文笔数">0</Setting>
     <Setting type="TextBox" label="小额汇总对帐笔数">1</Setting>
     <Setting type="TextBox" label="检查开始时间(hh:mm)">08:00</Setting>
-    <Setting type="TextBox" label="检查结束时间(hh:mm)">18:00</Setting>
+    <Setting type="TextBox" label="检查结束时间(hh:mm)">18:05</Setting>
     <Setting type="TextBox" label="检查时间间隔(秒)">16</Setting>
   </System>
   <System order="8" name="支票影像系统">
@@ -133,7 +135,7 @@
     <Setting type="TextBox" label="对账状态检查时间间隔(秒)">30</Setting>
     <Setting type="TextBox" label="对账状态日间检查结束时间(hh:mm)">16:10</Setting>
     <Setting type="TextBox" label="节点状态日终检查开始时间(hh:mm)">16:10</Setting>
-	<Setting type="TextBox" label="节点状态日终检查时间间隔(秒)">16</Setting>
+    <Setting type="TextBox" label="节点状态日终检查时间间隔(秒)">16</Setting>
   </System>
   <System order="11" name="清算直联系统">
     <Setting type="TextBox" label="(往帐汇划)未发笔数">50</Setting>
@@ -150,9 +152,9 @@
     <Setting type="TextBox" label="安徽分行 - 正常处理中笔数">5</Setting>
     <Setting type="TextBox" label="华安证券 - 正常处理中笔数">5</Setting>
     <Setting type="TextBox" label="国元证券 - 正常处理中笔数">5</Setting>
-    <Setting type="TextBox" label="安徽分行 - 失败结束笔数/成功结束笔数(%)">15</Setting>
-    <Setting type="TextBox" label="华安证券 - 失败结束笔数/成功结束笔数(%)">15</Setting>
-    <Setting type="TextBox" label="国元证券 - 失败结束笔数/成功结束笔数(%)">15</Setting>
+    <Setting type="TextBox" label="安徽分行 - 失败结束笔数/成功结束笔数(%)">20</Setting>
+    <Setting type="TextBox" label="华安证券 - 失败结束笔数/成功结束笔数(%)">20</Setting>
+    <Setting type="TextBox" label="国元证券 - 失败结束笔数/成功结束笔数(%)">20</Setting>
     <Setting type="TextBox" label="检查开始时间(hh:mm)">09:00</Setting>
     <Setting type="TextBox" label="检查时间间隔(秒)">1200</Setting>
   </System>
@@ -161,7 +163,7 @@
     <Setting type="TextBox" label="检查时间间隔(秒)">16</Setting>
   </System>
   <System order="14" name="银保通系统">
-  <Setting type="TextBox" label="交易状态异常 - 标志数目">1</Setting>
+    <Setting type="TextBox" label="交易状态异常 - 标志数目">1</Setting>
     <Setting type="TextBox" label="检查时间间隔(秒)">16</Setting>
   </System>
 </Systems>
