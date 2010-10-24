@@ -24,7 +24,7 @@ namespace JOYFULL.CMPW.Presentation.SystemsHandler
 
         static public string _SystemSignContent = "全国票据影像";
         static public Rect _SystemSignRange = new Rect(128,115,360,145);
-        static public int _SystemSignThreshHold = 80;
+        static public int _SystemSignThreshHold = 95;//80 --> 95  黄坚20101021
 
         //public override bool EnsureSystem()
         //{

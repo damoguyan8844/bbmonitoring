@@ -24,7 +24,7 @@ namespace JOYFULL.CMPW.Presentation.SystemsHandler
 
         static public string _SystemSignContent = "网点号流水号";
         static public Rect _SystemSignRange = new Rect(0, 110, 600, 180);
-        static public int _SystemSignThreshHold = 180;
+        static public int _SystemSignThreshHold = 220;//180-->220 黄坚20101021
         static public int _FailureTimes = 1;
 
         //public override bool EnsureSystem()

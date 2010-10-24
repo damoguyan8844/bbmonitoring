@@ -20,9 +20,10 @@ namespace JOYFULL.CMPW.Presentation.SystemsHandler
         static public int _SystemID = 2;
         static public System.Drawing.Bitmap _SystemBitMap = null;
 
-        static public string _SystemSignContent = "收到时间信息内容";
-        static public Rect _SystemSignRange = new Rect(340,120,782,150);
-        static public int _SystemSignThreshHold = 128;
+        static public string _SystemSignContent = "到时";
+		static public Rect _SystemSignRange = new Rect(340,120,782,150);
+		static public int _SystemSignThreshHold = 135; //128-135 黄坚20101021
+                
 
         //public override bool EnsureSystem()
         //{
