@@ -54,19 +54,9 @@ namespace JOYFULL.CMPW.Report
             Marshal.FinalReleaseComObject( range );
         }
 
-        public void Save( string path, string password )
+        public void Save( string path ,string password)
         {
-            //_book.Password = password;
-            //_book.SaveAs( path, Excel.XlFileFormat.xlExcel7,
-            //    Type.Missing, Type.Missing, false, false,
-            //    Excel.XlSaveAsAccessMode.xlNoChange, Type.Missing, Type.Missing,
-            //    Type.Missing, Type.Missing, Type.Missing );
             _book.Password = password;
-            Save( path );
-        }
-
-        public void Save( string path )
-        {
             _book.SaveAs( path, Excel.XlFileFormat.xlWorkbookNormal,
                 Type.Missing, Type.Missing, false, false,
                 Excel.XlSaveAsAccessMode.xlNoChange, Type.Missing, Type.Missing,
