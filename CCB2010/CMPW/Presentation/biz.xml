@@ -18,6 +18,8 @@
     <Setting type="TextBox" label="来账业务接收总笔数无变化(秒)">600</Setting>
     <Setting type="TextBox" label="往账待处理">0</Setting>
     <Setting type="TextBox" label="来账待处理">0</Setting>
+    <Setting type="TextBox" label="往账未清算">50</Setting>
+    <Setting type="TextBox" label="来账未发送">50</Setting>
     <Setting type="TextBox" label="检查开始时间(hh:mm)">08:30</Setting>
     <Setting type="TextBox" label="检查结束时间(hh:mm)">17:35</Setting>
     <Setting type="TextBox" label="检查时间间隔(秒)">8</Setting>
@@ -74,41 +76,41 @@
   </System>
   <System order="7" name="小额直联系统(非实时事务)">
     <Setting type="TextBox" label="事务往账异常笔数(查询书)">0</Setting>
-    <Setting type="TextBox" label="事务往账未发送笔数(查询书)">1</Setting>
+    <Setting type="TextBox" label="事务往账未发送笔数(查询书)">6</Setting>
     <Setting type="TextBox" label="事务来账异常笔数(查询书)">0</Setting>
-    <Setting type="TextBox" label="事务来账未发送笔数(查询书)">1</Setting>
+    <Setting type="TextBox" label="事务来账未发送笔数(查询书)">6</Setting>
     <Setting type="TextBox" label="事务往账异常笔数(查复书)">0</Setting>
-    <Setting type="TextBox" label="事务往账未发送笔数(查复书)">1</Setting>
+    <Setting type="TextBox" label="事务往账未发送笔数(查复书)">6</Setting>
     <Setting type="TextBox" label="事务来账异常笔数(查复书)">0</Setting>
-    <Setting type="TextBox" label="事务来账未发送笔数(查复书)">1</Setting>
+    <Setting type="TextBox" label="事务来账未发送笔数(查复书)">6</Setting>
     <Setting type="TextBox" label="事务往账异常笔数(自由格式)">0</Setting>
-    <Setting type="TextBox" label="事务往账未发送笔数(自由格式)">1</Setting>
+    <Setting type="TextBox" label="事务往账未发送笔数(自由格式)">6</Setting>
     <Setting type="TextBox" label="事务来账异常笔数(自由格式)">0</Setting>
-    <Setting type="TextBox" label="事务来账未发送笔数(自由格式)">1</Setting>
+    <Setting type="TextBox" label="事务来账未发送笔数(自由格式)">6</Setting>
     <Setting type="TextBox" label="事务往账异常笔数(退回申请)">0</Setting>
-    <Setting type="TextBox" label="事务往账未发送笔数(退回申请)">1</Setting>
+    <Setting type="TextBox" label="事务往账未发送笔数(退回申请)">6</Setting>
     <Setting type="TextBox" label="事务来账异常笔数(退回申请)">0</Setting>
-    <Setting type="TextBox" label="事务来账未发送笔数(退回申请)">1</Setting>
+    <Setting type="TextBox" label="事务来账未发送笔数(退回申请)">6</Setting>
     <Setting type="TextBox" label="事务往账异常笔数(退回应答)">0</Setting>
-    <Setting type="TextBox" label="事务往账未发送笔数(退回应答)">1</Setting>
+    <Setting type="TextBox" label="事务往账未发送笔数(退回应答)">6</Setting>
     <Setting type="TextBox" label="事务来账异常笔数(退回应答)">0</Setting>
-    <Setting type="TextBox" label="事务来账未发送笔数(退回应答)">1</Setting>
+    <Setting type="TextBox" label="事务来账未发送笔数(退回应答)">6</Setting>
     <Setting type="TextBox" label="事务往账异常笔数(止付申请)">0</Setting>
-    <Setting type="TextBox" label="事务往账未发送笔数(止付申请)">1</Setting>
+    <Setting type="TextBox" label="事务往账未发送笔数(止付申请)">6</Setting>
     <Setting type="TextBox" label="事务来账异常笔数(止付申请)">0</Setting>
-    <Setting type="TextBox" label="事务来账未发送笔数(止付申请)">1</Setting>
+    <Setting type="TextBox" label="事务来账未发送笔数(止付申请)">6</Setting>
     <Setting type="TextBox" label="事务往账异常笔数(止付应答)">0</Setting>
-    <Setting type="TextBox" label="事务往账未发送笔数(止付应答)">1</Setting>
+    <Setting type="TextBox" label="事务往账未发送笔数(止付应答)">6</Setting>
     <Setting type="TextBox" label="事务来账异常笔数(止付应答)">0</Setting>
-    <Setting type="TextBox" label="事务来账未发送笔数(止付应答)">1</Setting>
+    <Setting type="TextBox" label="事务来账未发送笔数(止付应答)">6</Setting>
     <Setting type="TextBox" label="事务往账异常笔数(实时信息)">0</Setting>
-    <Setting type="TextBox" label="事务往账未发送笔数(实时信息)">1</Setting>
+    <Setting type="TextBox" label="事务往账未发送笔数(实时信息)">6</Setting>
     <Setting type="TextBox" label="事务来账异常笔数(实时信息)">0</Setting>
-    <Setting type="TextBox" label="事务来账未发送笔数(实时信息)">1</Setting>
+    <Setting type="TextBox" label="事务来账未发送笔数(实时信息)">6</Setting>
     <Setting type="TextBox" label="事务往账异常笔数(其他信息)">0</Setting>
-    <Setting type="TextBox" label="事务往账未发送笔数(其他信息)">1</Setting>
+    <Setting type="TextBox" label="事务往账未发送笔数(其他信息)">6</Setting>
     <Setting type="TextBox" label="事务来账异常笔数(其他信息)">0</Setting>
-    <Setting type="TextBox" label="事务来账未发送笔数(其他信息)">1</Setting>
+    <Setting type="TextBox" label="事务来账未发送笔数(其他信息)">6</Setting>
     <!--<Setting type="TextBox" label="对账通知报文笔数" >1</Setting>-->
     <Setting type="TextBox" label="自由格式通知报文笔数">0</Setting>
     <Setting type="TextBox" label="收费通知报文笔数">0</Setting>
