@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Remindings>
   <Reminding file="重要时间点提示1.wav" time="08:00" desc="重客系统请签到。" />
-  <Reminding file="重要时间点提示2.wav" time="08:10" desc="资金清算、清算直联、大额支付系统请签到，电信控管开机。" />
+  <Reminding file="重要时间点提示2.wav" time="08:10" desc="大额支付系统请签到，电信控管请开机。" />
   <Reminding file="重要时间点提示3.wav" time="11:00" desc="请报送特色平台批量业务。" />
   <Reminding file="重要时间点提示4.wav" time="14:30" desc="请发送特色平台批量业务。" />
   <Reminding file="重要时间点提示5.wav" time="16:00" desc="请进行银期转账日终处理，支票影像日终处理，注意小额支付系统日切。" />
