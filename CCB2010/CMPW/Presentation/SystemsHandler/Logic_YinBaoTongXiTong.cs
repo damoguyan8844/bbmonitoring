@@ -24,7 +24,7 @@ namespace JOYFULL.CMPW.Presentation.SystemsHandler
         static public string _SystemSignContent = "银保重空交易";
         static public string _SystemSignContent2 = "银保联机交易";
         static public Rect _SystemSignRange = new Rect(0, 0, 390, 35);
-        static public int _SystemSignThreshHold = 128;
+        static public int _SystemSignThreshHold = 90;
 
         //public override bool EnsureSystem()
         //{
