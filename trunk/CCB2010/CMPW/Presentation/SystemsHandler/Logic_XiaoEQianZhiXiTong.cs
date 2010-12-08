@@ -21,7 +21,7 @@ namespace JOYFULL.CMPW.Presentation.SystemsHandler
         static public System.Drawing.Bitmap _SystemBitMap = null;
 
         static public string _SystemSignContent = "状态更新日";
-        static public Rect _SystemSignRange = new Rect(340, 115, 550, 145);
+        static public Rect _SystemSignRange = new Rect(340, 80, 700, 215);
         static public int _SystemSignThreshHold = 110;
 
         //public override bool EnsureSystem()
