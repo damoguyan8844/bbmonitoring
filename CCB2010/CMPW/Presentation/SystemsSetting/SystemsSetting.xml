@@ -72,7 +72,7 @@
       <FreqParameter order="3" type="int" label="检查时间间隔(秒)" value="8" applayon="1;2;3;4;5;6;7;8;9;10;11;12;13;14;15" />
     </CaptureParameter>
   </System>
-  <System order="4" name="小额前置系统" sign="状态更新日">
+  <System order="4" name="小额前置系统" sign="状态更新日;次态更新云;次态更新己;找苍更新任;莽夏彭三夏绳;贫苍至新任期;忿井更二二户;二佗三军了舀石">
     <AlertCondition>
       <Condition order="1" type="string" label="后台进程异常通知" value="进程异常" compare="is" enable="true" alerttype="1" rect="415;173;940;196" />
     </AlertCondition>
